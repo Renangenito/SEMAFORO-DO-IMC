@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>IMC Avaliação</title>
+</head>
+<body>
+    <main class="menu-principal">
+        <form id="formulario-imc" class="form-imc" action="">
+            <h2>Preencha com seus dados</h2>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            <input type="number" name="altura" id="altura" placeholder="Digite sua altura (Ex: 1.76)">
+            <input type="number" name="peso" id="peso" placeholder="Digite seu peso (EX: 62)">
+            <button id="botao-calcular" class="botao">Calcular</button>
+        </form>
+        <h3 class="simbolo-igual">=</h3>
+        <p class="resultado">resultado</p>
+        <h3 class="simbolo-igual">=</h3>
+        <div class="semaforo-avaliacao">
+            <p class="semaforo-vermelho"></p>
+            <p class="semaforo-amarelo"></p>
+            <p class="semaforo-verde"></p>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

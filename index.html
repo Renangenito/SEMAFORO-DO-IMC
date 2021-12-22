@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>IMC Avaliação</title>
+    <title>Semáforo do Imc</title>
 </head>
 <body>
+    <h1 class="titulo-principal">Semáforo do Imc</h1>
     <main class="menu-principal">
         <form id="formulario-imc" class="form-imc" action="">
             <h2>Preencha com seus dados</h2>
@@ -18,12 +19,14 @@
             <button id="botao-calcular" class="botao">Calcular</button>
         </form>
         <h3 class="simbolo-igual">=</h3>
-        <p class="resultado">resultado</p>
+        <div class="resultado">
+            <p class="resultado-paragrafo" id="imc-resultado">resultado</p>
+        </div>
         <h3 class="simbolo-igual">=</h3>
         <div class="semaforo-avaliacao">
-            <p class="semaforo-vermelho"></p>
-            <p class="semaforo-amarelo"></p>
-            <p class="semaforo-verde"></p>
+            <p id="vermelho" class="semaforo-vermelho"></p>
+            <p id="amarelo" class="semaforo-amarelo"></p>
+            <p id="verde" class="semaforo-verde"></p>
         </div>
     </main>
     <script src="./index.js"></script>

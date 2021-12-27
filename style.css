@@ -7,21 +7,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #cecece;
+    background-color: #c7c5c5;
 }
 .titulo-principal{
     font-family: 'Ubuntu Mono', monospace;
     width: 80vw;
     font-size: 26px;
     border-radius: 31px;
-    background-color: #9d9b9b;
+    background-color: #cecece;
     box-shadow: 0 0 9px #000;
     text-align: center;
     padding: 20px 0;
     margin-bottom: 19px
 }
 h2{
-    font-size: 19px;
+    font-size: 100%;
     font-family: 'Righteous', cursive;
     margin: 1rem;
     color: white;
@@ -32,7 +32,7 @@ h2{
     justify-content: space-around;
     width: 80vw;
     height: 80vh;
-    background-color: #9d9b9b;
+    background-color: #cecece;
     border-radius: 24px;
     box-shadow: 0 0 9px #000;
 
@@ -43,14 +43,15 @@ h2{
     justify-content: center;
     align-items: center;
     width: 35%;
+    height: 55%;
     background-color: #000;
     border-radius: 10px;
 }
 
 input{
     width:80%;
-    height: 30px;
-    margin-bottom: 1.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
     border: none;
     border-radius: 3px;
     outline: none;
@@ -61,7 +62,7 @@ input::placeholder{
 }
 .botao{
     width:82%;
-    height: 35px;
+    height: 3rem;
     border: none;
     border-radius: 3px;
     margin-bottom: 1.5rem;
@@ -89,6 +90,7 @@ input::placeholder{
 }
 .resultado-paragrafo{
     font-size: 18px;
+    width: 80%;
     text-align: center;
     color: white;
 }
@@ -137,6 +139,10 @@ input::placeholder{
 }
 
 @media screen and (min-width: 375px )and (max-width: 500px){
+    .body{
+        height: 100rem;
+    }
+    
     .menu-principal{
         width: 100%;
         height: 100%;
@@ -145,10 +151,11 @@ input::placeholder{
     }
     .titulo-principal{
         width: 100%;
-        margin-top: 10px;
+        margin-top: 120px;
     }
     .form-imc{
         width: 70%;
+        margin: 20px 0;
     }
     .simbolo-igual{
         display: none;
@@ -156,9 +163,11 @@ input::placeholder{
     .resultado{
         width: 36%;
         height: 18%;
+        margin: 20px 0;
     }
     .semaforo-avaliacao{
         width: 35%;
-        height: 300px;
+        height: 560px;
+        margin: 20px 0;
     }
 }

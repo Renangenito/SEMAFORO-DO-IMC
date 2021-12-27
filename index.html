@@ -13,9 +13,9 @@
     <main class="menu-principal">
         <form id="formulario-imc" class="form-imc" action="">
             <h2>Preencha com seus dados</h2>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-            <input type="number" name="altura" id="altura" placeholder="Digite sua altura (Ex: 1.76)">
-            <input type="number" name="peso" id="peso" placeholder="Digite seu peso (EX: 62)">
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            <input type="number" name="altura" id="altura" step="any" placeholder="Digite sua altura (Ex: 1.76)" required>
+            <input type="number" name="peso" id="peso" step="any" placeholder="Digite seu peso (EX: 62)" required>
             <button id="botao-calcular" class="botao">Calcular</button>
         </form>
         <h3 class="simbolo-igual">=</h3>

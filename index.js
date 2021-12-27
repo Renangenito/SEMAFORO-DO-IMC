@@ -3,7 +3,7 @@ const imcResultado = document.getElementById('imc-resultado')
 const vermelho = document.getElementById('vermelho')
 const amarelo = document.getElementById('amarelo')
 const verde = document.getElementById('verde')
-
+const form = document.getElementById('formulario-imc')
 
 function calculaImc(paciente){
     const imc = paciente.peso / (paciente.altura * paciente.altura)
@@ -19,24 +19,27 @@ botaoCalcular.addEventListener('click', (event)=>{
         peso: document.getElementById('peso').value,
         altura: document.getElementById('altura').value
        }
-       imcResultado.textContent = `${paciente.nome} o Seu IMC é
+       if(form.reportValidity()){
+        imcResultado.textContent = `${paciente.nome} o Seu IMC é
         ${calculaImc(paciente)}`
-        document.getElementById('formulario-imc').reset()
+        form.reset()
+       }
+       
 })
 
 function sinalVermelho(){
     apagaFarol()
-    limpaText()
+    limpaTexto()
     vermelho.classList.add('vermelho')
 }
 function sinalAmarelo(){
     apagaFarol()
-    limpaText()
+    limpaTexto()
     amarelo.classList.add('amarelo')
 }
 function sinalVerde(){
     apagaFarol()
-    limpaText()
+    limpaTexto()
     verde.classList.add('verde')
 }
 
@@ -45,7 +48,7 @@ function apagaFarol(){
     amarelo.classList.remove('amarelo')
     verde.classList.remove('verde')
 }
-function limpaText(){
+function limpaTexto(){
     vermelho.textContent = ""
     amarelo.textContent = ""
     verde.textContent = ""

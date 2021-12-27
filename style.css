@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 body{
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@ body{
     box-shadow: 0 0 9px #000;
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 19px
+    margin: 25px 0;
 }
 h2{
     font-size: 100%;
@@ -57,8 +57,9 @@ input{
     outline: none;
 }
 input::placeholder{
-    color: #000;
+    color: #302f2f;
     font-weight: 500;
+    padding-left: 5px;
 }
 .botao{
     width:82%;
@@ -78,6 +79,9 @@ input::placeholder{
 .simbolo-igual{
     font-size: 100px;
     font-weight: bold;
+}
+.seta-resultado{
+    display: none;
 }
 .resultado{
     display: flex;
@@ -139,35 +143,37 @@ input::placeholder{
 }
 
 @media screen and (min-width: 375px )and (max-width: 500px){
-    .body{
-        height: 100rem;
-    }
-    
+   
     .menu-principal{
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: space-evenly;
+        height: 70rem;
     }
     .titulo-principal{
         width: 100%;
-        margin-top: 120px;
+        margin-top: 25px;
     }
     .form-imc{
-        width: 70%;
-        margin: 20px 0;
+        width: 85%;
+        height: 27%;
     }
     .simbolo-igual{
         display: none;
     }
+    .seta-resultado{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
     .resultado{
         width: 36%;
-        height: 18%;
+        height: 12%;
         margin: 20px 0;
     }
     .semaforo-avaliacao{
-        width: 35%;
-        height: 560px;
-        margin: 20px 0;
+        width: 50%;
+        height: 45%;
     }
 }

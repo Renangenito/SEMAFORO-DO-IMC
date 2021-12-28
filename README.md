@@ -11,7 +11,7 @@
 * JavaScript
 * HTML5
 * CSS3
-* Visual Estudio Code
+* Visual Studio Code
 * Git e GitHub
 # Resultado 👉 https://renangenito.github.io/SEMAFORO-DO-IMC/
 <br></br>

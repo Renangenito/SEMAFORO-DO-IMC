@@ -1,5 +1,5 @@
 # SEMÁFORO DO IMC
-### É uma aplicação que calcula o IMC apartir dos dados passados pelo formulário sendo eles nome, altura e peso. De acordo com o resultado é mostrado um alerta no semáforo se a pessoa está com o peso acima, abaixo ou ideal! 
+### É uma aplicação que calcula o IMC a partir dos dados passados pelo formulário sendo eles nome, altura e peso. De acordo com o resultado é mostrado um alerta no semáforo se a pessoa está com o peso acima, abaixo ou ideal! 
 
 # - Desktop
 ![Semaforo-desktop](https://user-images.githubusercontent.com/77756047/147584406-1a9308d2-09e1-45f5-aacd-43078da9bda8.png)

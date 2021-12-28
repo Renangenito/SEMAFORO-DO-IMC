@@ -13,5 +13,7 @@
 * CSS3
 * Visual Estudio Code
 * Git e GitHub
+# Resultado 👉 https://renangenito.github.io/SEMAFORO-DO-IMC/
+<br></br>
 ## Feito por: Renan Lima
 # Linkedin  👉  https://www.linkedin.com/in/renan-lima-dev

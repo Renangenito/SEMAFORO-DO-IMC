@@ -141,9 +141,12 @@ input::placeholder{
 .verde{
     background-color: rgb(9, 255, 0);
 }
+/* --------------------------------------------------------------VERSÃO MOBILE--------------------------------------------------------- */
 
 @media screen and (min-width: 375px )and (max-width: 500px){
-   
+   .menu-principal{
+       overflow-y: calc(+10px);
+   }
     .menu-principal{
         flex-direction: row;
         flex-wrap: wrap;

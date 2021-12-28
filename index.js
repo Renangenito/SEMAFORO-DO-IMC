@@ -12,7 +12,6 @@ function calculaImc(paciente) {
     return imc.toFixed(2);
   
 }
-
 function validaPeso(paciente){
 if(paciente.peso > 0 && paciente.peso <= 200){
     return true;
@@ -73,15 +72,15 @@ function testaImc(imc) {
   }
   if (imc >= 17 && imc <= 18.49) {
     sinalAmarelo();
-    amarelo.textContent = "Abaixo do peso!!";
+    amarelo.textContent = "Atenção você está abaixo do peso!!";
   }
   if (imc >= 18.5 && imc <= 24.99) {
     sinalVerde();
-    verde.textContent = "Parabés você está com o seu peso ideal!";
+    verde.textContent = "Parabéns continue assim, você está com o seu peso ideal!";
   }
   if (imc >= 25 && imc <= 29.99) {
     sinalAmarelo();
-    amarelo.textContent = "Opa, está acima do peso!!";
+    amarelo.textContent = "Atenção, você está acima do peso!!";
   }
   if (imc > 30) {
     sinalVermelho();

@@ -7,14 +7,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #c7c5c5;
+    background-color: #fff;
 }
 .titulo-principal{
     font-family: 'Ubuntu Mono', monospace;
     width: 80vw;
     font-size: 26px;
     border-radius: 31px;
-    background-color: #cecece;
+    background-color: #fff;
     box-shadow: 0 0 9px #000;
     text-align: center;
     padding: 20px 0;
